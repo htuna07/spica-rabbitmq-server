@@ -1,0 +1,21 @@
+_id: 6ab67b69e2a6a9b7df3b7eca
+name: rabbitmq-consumer
+language: javascript
+timeout: 10
+warmWorkers: 0
+concurrencyPerWorker: 1
+triggers:
+  onMessage:
+    type: rabbitmq
+    active: true
+    options:
+      url: amqps://spica:<RABBITMQ_PASSWORD>@rabbitmq.tunakucukertas.com:5681
+      queue:
+        name: spica.test
+        durable: true
+      prefetch: 1
+      noAck: false
+env_vars:
+  - 6aba2fe3e2a6a9b7df3b7ee7
+secrets:
+  - 6aba2fcee2a6a9b7df3b7ee5

@@ -1,0 +1,7 @@
+{
+  "name": "rabbitmq-producer",
+  "version": "0.0.1",
+  "dependencies": {
+    "amqplib": "^2.1.0"
+  }
+}

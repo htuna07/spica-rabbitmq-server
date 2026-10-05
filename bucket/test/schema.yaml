@@ -1,0 +1,25 @@
+_id: 6abcad62e2a6a9b7df3b876c
+title: test
+description: Describe your new bucket
+icon: view_stream
+primary: title
+readOnly: false
+history: false
+properties:
+  title:
+    type: string
+    title: title
+    description: Title of the row
+    options:
+      translate: false
+  description:
+    type: textarea
+    title: description
+    description: Description of the row
+    options:
+      translate: false
+acl:
+  write: true==true
+  read: true==true
+order: 0
+indexes: []

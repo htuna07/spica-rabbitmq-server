@@ -1,0 +1,20 @@
+_id: 6aba34cfe2a6a9b7df3b7f0b
+name: rabbitmq-producer
+triggers:
+  default:
+    type: http
+    active: true
+    options:
+      method: Post
+      path: /rabbitmq-send
+      preflight: true
+      authenticate: []
+      authorize: false
+timeout: 20
+language: javascript
+warmWorkers: 0
+concurrencyPerWorker: 1
+env_vars:
+  - 6aba2fe3e2a6a9b7df3b7ee7
+secrets:
+  - 6aba2fcee2a6a9b7df3b7ee5
